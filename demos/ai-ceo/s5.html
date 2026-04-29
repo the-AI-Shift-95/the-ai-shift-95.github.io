@@ -79,14 +79,13 @@
         }
         .draft-panel.visible { display: block; }
         .draft-title { font-size: 11px; color: #9ca3af; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 14px; font-weight: 700; }
-        .skeleton-line {
-            height: 11px;
-            background: #e9d5ff;
-            border-radius: 4px;
-            margin-bottom: 9px;
+        .draft-text {
+            font-size: 13px;
+            line-height: 1.75;
+            color: #374151;
             filter: blur(2.5px);
+            user-select: none;
         }
-        .skeleton-line:last-child { margin-bottom: 0; }
         .button {
             background: #7c3aed;
             color: #ffffff;
@@ -145,24 +144,17 @@
 
         <div class="draft-panel" id="draft-1">
             <div class="draft-title">Draft Slack message — ready to send</div>
-            <div class="skeleton-line" style="width: 91%;"></div>
-            <div class="skeleton-line" style="width: 100%;"></div>
-            <div class="skeleton-line" style="width: 97%;"></div>
-            <div class="skeleton-line" style="width: 85%;"></div>
-            <div class="skeleton-line" style="width: 78%;"></div>
+            <div class="draft-text">Hey — wanted to share a quick update on how I'd like to handle our back-and-forth going forward. I'm restructuring how I manage my attention across the team to make sure the things that actually need me get my full focus. From now on, please reach out only when a decision involves spending above a certain threshold or has a direct revenue impact. For everything else — updates, progress notes, FYIs — drop it in our shared doc and I'll review it at our next scheduled touch point. This isn't about being less available. It's about being more useful when it matters. Appreciate you working with me on this.</div>
         </div>
 
         <div class="draft-panel" id="draft-2">
             <div class="draft-title">Draft Slack message — ready to send</div>
-            <div class="skeleton-line" style="width: 88%;"></div>
-            <div class="skeleton-line" style="width: 100%;"></div>
-            <div class="skeleton-line" style="width: 62%;"></div>
+            <div class="draft-text">Quick note on restructuring our check-ins. I'm moving to a single weekly sync — Tuesdays at 10am — rather than ad hoc catch-ups throughout the week. If something comes up before then, jot it down and we'll cover it in the session. For anything genuinely time-sensitive, you know how to reach me. Looking forward to making our time together more focused.</div>
         </div>
 
         <div class="draft-panel" id="draft-3">
             <div class="draft-title">Draft Slack message — ready to send</div>
-            <div class="skeleton-line" style="width: 95%;"></div>
-            <div class="skeleton-line" style="width: 71%;"></div>
+            <div class="draft-text">Heads up — I'm updating how I engage with the ops channel. I'll be checking in once a day at 9am standup rather than monitoring throughout the day. If something needs a response before then, flag it at standup and we'll sort it.</div>
         </div>
 
         <button class="button" onclick="window.location.href='s6.html'">See week plan →</button>
