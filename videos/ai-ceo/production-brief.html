@@ -185,7 +185,7 @@
         </div>
         <div class="status-item">
           <div class="status-dot ready"></div>
-          <div class="status-label"><strong style="color:#22c55e;">Demo 1</strong> ready to build</div>
+          <div class="status-label"><strong style="color:#22c55e;">Demo 1</strong> built — live at Pages</div>
         </div>
         <div class="status-item">
           <div class="status-dot ready"></div>
@@ -340,7 +340,7 @@
   <!-- DEMO 1 SPEC -->
   <div class="section">
     <div class="section-title">Demo 1 — Simulation Architecture</div>
-    <p style="font-size:13px;color:#6b7280;margin-bottom:16px;">Seven linked screens. Each click advances to the next. Sai flows through naturally while speaking to camera. The editor barely touches Demo 1 if the simulation is clean.</p>
+    <p style="font-size:13px;color:#6b7280;margin-bottom:16px;">Seven linked screens. Each click advances to the next. Sai flows through naturally while speaking to camera. The editor barely touches Demo 1 if the simulation is clean. <strong>Live at: <a href="https://the-ai-shift-95.github.io/demos/ai-ceo/" style="color:#7c3aed;">the-ai-shift-95.github.io/demos/ai-ceo/</a></strong></p>
 
     <div class="flow">
       <div class="flow-screen">S1<br><span style="font-size:9px;font-weight:400;">Input</span></div>
@@ -454,13 +454,13 @@
               <div class="spec-content">Shows the AI working — not just instant output. The viewer registers "it's pulling from real data sources."</div>
             </div>
             <div>
-              <div class="spec-label">Animation sequence</div>
+              <div class="spec-label">Animation sequence (as built)</div>
               <ul class="spec-list">
-                <li>Calendar: "Pulling..." → spins for 0.5s → "✓ Pulled" (green)</li>
-                <li>Slack: "Pulling..." → spins for 0.8s → "✓ Pulled" (green)</li>
-                <li>Email: "Pulling..." → spins for 1s → "✓ Pulled" (green)</li>
+                <li>Calendar: spinner → "✓ Pulled" at 1.8s — shows 847 calendar events</li>
+                <li>Slack: spinner → "✓ Pulled" at 2.7s — shows 23 Slack conversations</li>
+                <li>Email: spinner → "✓ Pulled" at 3.6s — shows 156 emails</li>
                 <li>Then "Mapping time allocation..." progress bar fills</li>
-                <li>Auto-advance to S3 after ~3.5 seconds</li>
+                <li>Auto-advance to S3 after 5 seconds total</li>
               </ul>
             </div>
             <div class="callout" style="margin-top:4px; font-size:12px; padding:10px 14px;background:#fff7ed;border-color:#fed7aa;border-left-color:#f97316;"><strong>Key visual:</strong> The spinning/loading animation is the signal that this is dynamic. Don't skip this screen — it's what makes the output feel earned.</div>
@@ -486,7 +486,7 @@
               <div class="wf-label" style="margin-bottom:6px;">Target Cascade</div>
               <div class="wf-row">12-Month Target <span class="wf-blurred" style="filter:blur(3px) !important;">$4.2M ARR</span> <span class="gap">↓ 18%</span></div>
               <div class="wf-row">Quarter Target (Q2) <span class="wf-blurred" style="filter:blur(3px) !important;">$1.1M</span> <span class="gap">↓ 22%</span></div>
-              <div class="wf-row">Month Target (Apr) <span class="wf-blurred" style="filter:blur(3px) !important;">$380K</span> <span class="gap">↓ 11%</span></div>
+              <div class="wf-row">Month Target (Apr) <span class="wf-blurred" style="filter:blur(3px) !important;">$387K</span> <span class="gap">↓ 11%</span></div>
               <div class="wf-row">Last Week Actual <span class="wf-blurred" style="filter:blur(3px) !important;">$74K</span> <span class="gap">↓ Gap: 27%</span></div>
             </div>
           </div>
@@ -554,11 +554,11 @@
           </div>
           <div class="screen-spec">
             <div>
-              <div class="spec-label">Three metric panels</div>
+              <div class="spec-label">Three metric panels (as built)</div>
               <ul class="spec-list">
-                <li>Units generated: number <span class="blur-pill">BLUR</span>, percentage gap <span class="show-pill">SHOW</span></li>
-                <li>CAC: number <span class="blur-pill">BLUR</span>, percentage vs target <span class="show-pill">SHOW</span></li>
-                <li>ROAS: number <span class="blur-pill">BLUR</span>, gap vs target <span class="show-pill">SHOW</span></li>
+                <li>Units: 127 units — <span class="blur-pill">BLUR at 8px</span>, gap % <span class="show-pill">SHOW</span></li>
+                <li>CAC: $847 — <span class="blur-pill">BLUR at 8px</span>, gap % <span class="show-pill">SHOW</span></li>
+                <li>ROAS: 2.1x — <span class="blur-pill">BLUR at 8px</span>, gap vs target <span class="show-pill">SHOW</span></li>
               </ul>
             </div>
             <div>
@@ -626,11 +626,11 @@
               </ul>
             </div>
             <div>
-              <div class="spec-label">Slack draft panel</div>
+              <div class="spec-label">Slack draft panel (as built)</div>
               <ul class="spec-list">
-                <li>Show the structure of a real message: greeting, the problem, the new parameter, the close</li>
-                <li>Content lines: <span class="blur-pill">BLUR</span> — show as grey lines (like skeleton UI)</li>
-                <li>Visual point: it's real, ready to send, specific — not vague advice</li>
+                <li>Clicking "Draft →" reveals an actual Slack message (no PII) — a different real message per row</li>
+                <li>Message content: <span class="blur-pill">BLUR at 2.5px</span> — visible enough to read structure, private enough to protect content</li>
+                <li>Visual point: it's real, ready to send, specific — not skeleton lines, not vague advice</li>
               </ul>
             </div>
             <div class="callout" style="margin-top:4px; font-size:12px; padding:10px 14px;background:#fff7ed;border-color:#fed7aa;border-left-color:#f97316;"><strong>Key visual insight:</strong> Volume matters here. 3–4 people listed makes the viewer think "it found all the sources of operational drag automatically." The list IS the impact, not the content of each row.</div>
@@ -1101,7 +1101,7 @@
           <td>Build + test Demo 1 simulation in Claude Code</td>
           <td>Apurv / Claude</td>
           <td>Recording Demo 1</td>
-          <td><span class="pill amber">In progress</span></td>
+          <td><span class="pill green">Done</span></td>
         </tr>
         <tr>
           <td>Run Demo 2 end-to-end once on Sai's account</td>
