@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Editor Outreach Messages — Internal</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f8f7ff; color: #111827; min-height: 100vh; padding: 48px 24px; }
+  .wrap { max-width: 720px; margin: 0 auto; }
+
+  h1 { font-size: 24px; font-weight: 800; color: #111827; margin-bottom: 6px; letter-spacing: -0.02em; }
+  .meta { font-size: 13px; color: #9ca3af; margin-bottom: 40px; }
+
+  h2 { font-size: 11px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: #7c3aed; margin-bottom: 14px; margin-top: 40px; }
+
+  .card { background: #fff; border: 1px solid #e9d5ff; border-radius: 12px; padding: 24px; margin-bottom: 20px; }
+  .card-header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 16px; gap: 16px; }
+  .card-title { font-size: 14px; font-weight: 700; color: #111827; }
+  .card-sub { font-size: 12px; color: #9ca3af; margin-top: 3px; }
+  .copy-btn { flex-shrink: 0; font-size: 12px; font-weight: 700; color: #7c3aed; background: #f5f3ff; border: 1px solid #ddd6fe; border-radius: 6px; padding: 6px 14px; cursor: pointer; transition: background 0.15s; white-space: nowrap; }
+  .copy-btn:hover { background: #ede9fe; }
+  .copy-btn.copied { color: #16a34a; background: #f0fdf4; border-color: #bbf7d0; }
+
+  .message { font-size: 14px; line-height: 1.75; color: #374151; white-space: pre-wrap; background: #f8f7ff; border-radius: 8px; padding: 16px; border: 1px solid #f3f4f6; }
+
+  .checklist { margin-top: 8px; }
+  .checklist-item { display: flex; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 1px solid #f3f4f6; font-size: 14px; color: #374151; }
+  .checklist-item:last-child { border-bottom: none; }
+  .checklist-item input[type="checkbox"] { width: 16px; height: 16px; accent-color: #7c3aed; cursor: pointer; flex-shrink: 0; }
+  .checklist-item label { cursor: pointer; line-height: 1.4; }
+  .checklist-item .channel { font-size: 11px; color: #9ca3af; margin-left: auto; flex-shrink: 0; }
+
+  .divider { height: 1px; background: #f3f4f6; margin: 32px 0; }
+
+  .cta-note { background: #7c3aed; color: #fff; border-radius: 10px; padding: 16px 20px; font-size: 13px; margin-top: 32px; line-height: 1.6; }
+  .cta-note strong { color: #ddd6fe; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Editor Outreach Messages</h1>
+  <div class="meta">Internal use only &mdash; updated 2026-05-01</div>
+
+  <h2>Posting Checklist</h2>
+  <div class="card">
+    <div class="checklist">
+      <div class="checklist-item">
+        <input type="checkbox" id="c1">
+        <label for="c1">NHB WhatsApp group &mdash; use <strong>Version C</strong> (highest quality referrals, post first)</label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c2">
+        <label for="c2">Other WhatsApp groups &mdash; use <strong>Version A</strong></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c3">
+        <label for="c3">Facebook editor groups &mdash; use <strong>Version A</strong></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c4">
+        <label for="c4">LinkedIn post + groups &mdash; use <strong>Version B</strong></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c5">
+        <label for="c5">Upwork job post &mdash; filter India location</label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c6">
+        <label for="c6">YTJobs.co &mdash; post full job spec</label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c7">
+        <label for="c7">Editing Hunt Discord &mdash; post in #hire-an-editor</label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c8">
+        <label for="c8">Fiverr &mdash; DM top 5-10 with <strong>Version D</strong> (check their work first)</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <h2>Version C &mdash; NHB WhatsApp (Warm Referral Network)</h2>
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">Post first — highest quality referrals</div>
+        <div class="card-sub">WhatsApp group message</div>
+      </div>
+      <button class="copy-btn" onclick="copyMsg('msg-c', this)">Copy</button>
+    </div>
+    <div class="message" id="msg-c">Hey everyone - quick ask.
+
+We are launching a YouTube channel in June. It teaches small business owners how to use AI. Looking for a video editor.
+
+Scripts are ready and the style is clear - they just need to match it and deliver on time. The presenter has been running live training for 7+ years and knows how to keep people watching.
+
+Long-term role. 2 videos a week. Paid per video on delivery. Fast turnaround and reliability are very important.
+
+Style: animated captions (words appear one by one with colour highlights), memes and sound effects, screen recordings with face cam in corner, diagrams on screen. Business or education experience only.
+
+If you know a good editor, please tag them or pass this along.
+
+To apply: email theaishift95@gmail.com with 2 best YouTube videos, rate, and when they can start.</div>
+  </div>
+
+  <h2>Version A &mdash; Facebook / Discord / WhatsApp (Wide)</h2>
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">Cast the net wide</div>
+        <div class="card-sub">Facebook groups, Discord, other WhatsApp groups</div>
+      </div>
+      <button class="copy-btn" onclick="copyMsg('msg-a', this)">Copy</button>
+    </div>
+    <div class="message" id="msg-a">Video editor needed - AI business YouTube channel, launching June 2026.
+
+2 long-form videos per week (10-20 min each). Scripts and style are ready. Your job is to match the style and deliver on time, every time.
+
+Style: animated captions (words appear one by one with colour highlights), memes and sound effects, screen recordings with face cam in corner, diagrams on screen. Business or education experience only.
+
+Long-term, paid per video on delivery. Turnaround time and reliability are very important.
+
+Email theaishift95@gmail.com with your 2 best videos, your rate, and when you can start.</div>
+  </div>
+
+  <h2>Version B &mdash; LinkedIn</h2>
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">Professional tone</div>
+        <div class="card-sub">LinkedIn post and groups</div>
+      </div>
+      <button class="copy-btn" onclick="copyMsg('msg-b', this)">Copy</button>
+    </div>
+    <div class="message" id="msg-b">Video Editor Wanted - Business & AI YouTube Channel (Launching June 2026)
+
+The AI Shift is a long-form YouTube channel for small business owners. 2 videos per week. Scripts are done, style is clear. We need a reliable editor who can match the style and deliver on time, every time.
+
+The presenter has 7+ years of experience in live training with very high viewer retention. Content is structured and ready to edit.
+
+What we need:
+- Animated captions (words appear one by one with colour highlights)
+- Screen recordings with face cam in the corner (Picture-in-Picture)
+- Memes and sound effects used naturally
+- Diagrams and step-by-step visuals on screen
+- Business or education YouTube experience
+
+Turnaround time and consistency are essential. Paid per video on delivery. Long-term role for the right person.
+
+Email theaishift95@gmail.com with your 2 best YouTube videos, your rate, and when you can start.</div>
+  </div>
+
+  <h2>Version D &mdash; Fiverr / Upwork Direct DM</h2>
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">Personalised outreach</div>
+        <div class="card-sub">DM top 5-10 editors whose work you've checked first</div>
+      </div>
+      <button class="copy-btn" onclick="copyMsg('msg-d', this)">Copy</button>
+    </div>
+    <div class="message" id="msg-d">Hi [Name] - I looked at your work and think there could be a good fit here.
+
+We are launching a YouTube channel in June - AI and business education, long-form videos (10-20 min), 2 per week. Scripts are ready and the style is set. We need someone who can match the style and deliver on time, every time.
+
+Style: animated captions (words appear one by one with colour highlights), memes and sound effects, screen recordings with face cam in the corner, diagrams on screen. Business or education experience important.
+
+Paid per video on delivery. Long-term for the right person. Turnaround time matters a lot to us.
+
+If this sounds interesting, email theaishift95@gmail.com with your 2 best videos, your rate, and when you can start.</div>
+  </div>
+
+  <div class="cta-note">
+    All messages funnel to <strong>theaishift95@gmail.com</strong><br>
+    Job post: <strong>the-ai-shift-0.github.io/hiring/</strong>
+  </div>
+
+</div>
+
+<script>
+function copyMsg(id, btn) {
+  const text = document.getElementById(id).innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    btn.textContent = 'Copied!';
+    btn.classList.add('copied');
+    setTimeout(() => {
+      btn.textContent = 'Copy';
+      btn.classList.remove('copied');
+    }, 2000);
+  });
+}
+</script>
+</body>
+</html>
