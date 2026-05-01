@@ -10,7 +10,7 @@
   .wrap { max-width: 720px; margin: 0 auto; }
 
   h1 { font-size: 26px; font-weight: 800; color: #111827; margin-bottom: 6px; letter-spacing: -0.02em; }
-  .meta { font-size: 13px; color: #9ca3af; margin-bottom: 40px; display: flex; gap: 16px; flex-wrap: wrap; }
+  .meta { font-size: 13px; color: #9ca3af; margin-bottom: 24px; display: flex; gap: 16px; flex-wrap: wrap; }
   .meta span { display: flex; align-items: center; gap: 5px; }
   .dot { width: 6px; height: 6px; border-radius: 50%; background: #22c55e; display: inline-block; }
 
@@ -23,7 +23,11 @@
   ul li:last-child { border-bottom: none; }
   ul li::before { content: ''; position: absolute; left: 0; top: 16px; width: 6px; height: 6px; border-radius: 50%; background: #ddd6fe; }
   ul li strong { color: #111827; }
-  .plus li::before { background: #7c3aed; }
+
+  .quick-facts { background: #fff; border: 1px solid #e9d5ff; border-radius: 12px; padding: 20px 24px; margin-bottom: 32px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .fact { display: flex; flex-direction: column; gap: 4px; }
+  .fact-label { font-size: 10px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #a78bfa; }
+  .fact-value { font-size: 15px; font-weight: 700; color: #111827; }
 
   .opp-box { background: #fff; border: 1px solid #e9d5ff; border-radius: 12px; padding: 22px 24px; margin-bottom: 8px; }
   .opp-box p { color: #374151; margin-bottom: 0; }
@@ -33,13 +37,15 @@
   .ref-num { font-size: 10px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #a78bfa; }
   .ref-title { font-size: 14px; color: #111827; font-weight: 700; }
   .ref-desc { font-size: 13px; color: #9ca3af; }
-  .ref-link { font-size: 12px; color: #7c3aed; font-weight: 600; margin-top: 4px; word-break: break-all; }
+  .ref-link a { font-size: 13px; color: #7c3aed; font-weight: 600; margin-top: 4px; word-break: break-all; text-decoration: none; }
+  .ref-link a:hover { text-decoration: underline; }
 
   .apply-box { background: #7c3aed; border-radius: 12px; padding: 24px 26px; margin-top: 36px; }
   .apply-box h2 { color: #ddd6fe; margin-top: 0; }
   .apply-link { display: inline-block; margin-top: 16px; background: #fff; color: #7c3aed; font-size: 15px; font-weight: 800; padding: 14px 32px; border-radius: 8px; text-decoration: none; transition: background 0.15s; }
   .apply-link:hover { background: #f5f3ff; }
   .apply-note { font-size: 13px; color: rgba(255,255,255,0.6); margin-top: 14px; }
+  .apply-email { font-size: 18px; font-weight: 800; color: #fff; display: block; margin: 10px 0 4px; }
 
   .divider { height: 1px; background: #f3f4f6; margin: 32px 0; }
 </style>
@@ -47,86 +53,96 @@
 <body>
 <div class="wrap">
 
-  <h1>Kickass Editor Wanted for YouTube Channel - long-term role</h1>
+  <h1>Kickass Editor Wanted for YouTube Channel</h1>
   <div class="meta">
     <span><span class="dot"></span> One slot open</span>
     <span>·</span>
-    <span>Long-term, 2 videos/week</span>
-    <span>·</span>
-    <span>Paid per video, on delivery</span>
-    <span>·</span>
-    <span>Launching June 2026</span>
+    <span>Starting now</span>
   </div>
 
-  <h2>The Opportunity</h2>
-  <p>The presenter has 7+ years of experience teaching large groups. People stay and watch his videos all the way through. The scripts are ready. The style is set. Your job is to edit the videos to match.</p>
-  <p>This is not a one-time job. We want someone for the long run. Do good work and you stay.</p>
-
-  <div class="opp-box">
-    <div class="opp-label">What this looks like in practice</div>
-    <p>You start with 10 videos. We post 2 and save 8 for the June launch. After that, 2 videos every week. You get paid per video when you deliver it.</p>
+  <div class="quick-facts">
+    <div class="fact">
+      <div class="fact-label">Work</div>
+      <div class="fact-value">2 videos/week to start</div>
+    </div>
+    <div class="fact">
+      <div class="fact-label">Pay</div>
+      <div class="fact-value">Per video, on delivery</div>
+    </div>
+    <div class="fact">
+      <div class="fact-label">Type</div>
+      <div class="fact-value">Long-term, grows over time</div>
+    </div>
+    <div class="fact">
+      <div class="fact-label">Team</div>
+      <div class="fact-value">Already runs another channel</div>
+    </div>
   </div>
 
-  <h2>What You'll Be Editing</h2>
-  <p>Long YouTube videos, 10-20 minutes each. The videos teach small business owners about AI - but in a fun, high-energy way. Not boring. Not corporate.</p>
+  <h2>About This Role</h2>
+  <p>The team already runs another YouTube channel. This is their second one. The scripts are ready. The style is set. Your job is to edit the videos to match the style - not figure it out from scratch.</p>
+  <p>We start with 10 videos, then 2 every week. As the channel grows, so does the workload. You get paid per video when you deliver. Do good work and you stay. This is steady, long-term income.</p>
+
+  <h2>What You Will Be Editing</h2>
+  <p>Long YouTube videos, 10 to 20 minutes each. Fun and high-energy. Not boring. Not corporate.</p>
   <ul>
-    <li><strong>Two-pass footage</strong> - we film the presenter talking to camera, then film the screen with voiceover. You cut and match them. Rule: explain the idea first, then show it on screen.</li>
-    <li><strong>Screen recordings</strong> - the screen is the main view. The presenter's face shows in a small Picture-in-Picture window in the corner.</li>
-    <li><strong>Animated captions</strong> - words appear one by one. Key words are highlighted in colour. No static text at the bottom.</li>
-    <li><strong>Memes and sound effects</strong> - clips from TV, movies, the internet. This is part of the style, not optional.</li>
+    <li><strong>Two video files per video</strong> - one of the presenter talking to camera, one of the computer screen with voiceover. You combine them. The idea is always explained first, then shown on screen.</li>
+    <li><strong>Screen recordings</strong> - the screen fills the full frame. The presenter's face shows in a small window in the corner (Picture-in-Picture).</li>
+    <li><strong>Animated captions</strong> - words appear one by one as the presenter speaks. Key words are highlighted in colour. No plain white text at the bottom.</li>
+    <li><strong>Memes and sound effects</strong> - clips from TV, movies, the internet. This is part of the style.</li>
     <li><strong>Text on screen</strong> - for key points and numbers</li>
-    <li><strong>Diagrams and visuals</strong> - step-by-step breakdowns drawn or animated on screen</li>
+    <li><strong>Diagrams on screen</strong> - step-by-step visuals, numbered lists, concept breakdowns</li>
   </ul>
 
-  <h2>Reference Style</h2>
-  <p style="font-size:13px;color:#9ca3af;margin-bottom:14px;">Watch at least 10 videos from each channel before you apply. This is the style we want.</p>
+  <h2>Watch These First</h2>
+  <p style="font-size:13px;color:#9ca3af;margin-bottom:14px;">Watch 5+ videos from each channel. This is the style and energy we want.</p>
 
   <div class="ref-card">
     <div class="ref-num">Reference 1</div>
     <div class="ref-title">Structure and Pacing</div>
-    <div class="ref-desc">Shows how to set up an idea before showing the screen. Follow this structure.</div>
-    <div class="ref-link">youtube.com/watch?v=4rmoJ_wc5Jw</div>
+    <div class="ref-desc">How to explain an idea before showing the screen. Follow this structure.</div>
+    <div class="ref-link"><a href="https://www.youtube.com/watch?v=4rmoJ_wc5Jw" target="_blank">youtube.com/watch?v=4rmoJ_wc5Jw</a></div>
   </div>
   <div class="ref-card">
     <div class="ref-num">Reference 2</div>
     <div class="ref-title">Energy and Style</div>
     <div class="ref-desc">High energy, memes, jokes, sound effects. This is the feel we want.</div>
-    <div class="ref-link">youtube.com/watch?v=w413mkOJ9es</div>
+    <div class="ref-link"><a href="https://www.youtube.com/watch?v=w413mkOJ9es" target="_blank">youtube.com/watch?v=w413mkOJ9es</a></div>
   </div>
 
   <div class="divider"></div>
 
-  <h2>You're a Fit If</h2>
+  <h2>Good Match If</h2>
   <ul>
-    <li>You have edited YouTube videos for a business, education, or finance channel - not just vlogs or gaming</li>
-    <li>You know when a meme is funny and when it is not. You use humour and sound effects in a natural way.</li>
-    <li>Your videos move fast but feel smooth. You cut out slow parts and keep the energy high.</li>
-    <li><strong>Your captions are animated</strong> - words appear one by one, key words are highlighted in colour. Not plain white text.</li>
-    <li><strong>You can create diagrams on screen</strong> - step-by-step visuals, numbered lists, concept breakdowns</li>
-    <li>Your captions have no spelling mistakes and read well in English</li>
-    <li>You ask questions before you start, so you only need 1-2 small changes after</li>
-    <li>You deliver on time. You do what you say.</li>
+    <li>You have edited YouTube videos for a business, education, or finance channel</li>
+    <li>You know how to use memes and sound effects in a natural way</li>
+    <li>Your videos feel fast and energetic - you cut out the slow and silent parts</li>
+    <li>Your captions are animated - words appear one by one with colour highlights</li>
+    <li>You can add diagrams and step-by-step visuals on screen</li>
+    <li>You have edited screen recordings with a face cam in the corner</li>
+    <li>You deliver on time and do what you say</li>
   </ul>
 
-  <h2>Not a Fit If</h2>
+  <h2>Not a Match If</h2>
   <ul>
-    <li>Your portfolio says "I edit everything" with no focus. We need someone who knows business content.</li>
-    <li>Your captions are plain white text at the bottom - that is not our style</li>
-    <li>You have no examples of screen recording with a Picture-in-Picture face cam</li>
-    <li>You use stock footage of beaches, handshakes, or people at laptops - wrong audience</li>
-    <li>You need us to find all the images and clips for you. You should know how to find what you need.</li>
+    <li>You only edit vlogs, gaming, or lifestyle videos</li>
+    <li>Your captions are plain white text - that is not our style</li>
+    <li>You have no examples of screen recording with a face cam</li>
+    <li>You need the client to find all the images and clips for you</li>
   </ul>
 
   <div class="apply-box">
-    <h2>One Slot. Send Your Work.</h2>
-    <p style="font-size:14px;color:rgba(255,255,255,0.75);margin-top:10px;">We are only talking to a few editors. Email <strong style="color:#fff;">theaishift95@gmail.com</strong> with:</p>
-    <ul style="margin-top:12px;margin-bottom:0;">
-      <li style="color:rgba(255,255,255,0.85);border-color:rgba(255,255,255,0.1);">Your 2 best samples - business, education, or finance content only</li>
+    <h2>One Slot. Apply Now.</h2>
+    <p style="font-size:14px;color:rgba(255,255,255,0.75);margin-top:10px;">Send an email to:</p>
+    <span class="apply-email">theaishift95@gmail.com</span>
+    <p style="font-size:13px;color:rgba(255,255,255,0.65);margin-bottom:16px;">Include these 3 things:</p>
+    <ul style="margin-top:0;margin-bottom:0;">
+      <li style="color:rgba(255,255,255,0.85);border-color:rgba(255,255,255,0.1);">2 YouTube video samples - business, education, or finance only</li>
       <li style="color:rgba(255,255,255,0.85);border-color:rgba(255,255,255,0.1);">Your rate per video</li>
-      <li style="color:rgba(255,255,255,0.85);border-color:rgba(255,255,255,0.1);">Where you are based and when you can start</li>
+      <li style="color:rgba(255,255,255,0.85);border-color:rgba(255,255,255,0.1);">When you can start</li>
     </ul>
-    <a class="apply-link" href="mailto:theaishift95@gmail.com?subject=Video Editor - Application">Send Your Work</a>
-    <p class="apply-note">If you are shortlisted, you get a paid test edit first. We reply to every application.</p>
+    <a class="apply-link" href="mailto:theaishift95@gmail.com?subject=Video Editor Application">Send Email</a>
+    <p class="apply-note">We reply to every application. If we like your work, we send you a paid test edit before anything else.</p>
   </div>
 
 </div>
